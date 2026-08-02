@@ -151,7 +151,7 @@ const Hero = () => {
             </a>
 
             <a
-              href="/Nitin_Patyal_Resume.pdf"
+              href="/Nitin_Patyal_Resume_.pdf"
               download="Nitin_Patyal_Resume.pdf"
               className="flex w-full items-center
                          justify-center gap-2
