@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-
+import codeMindImage from "../assets/projects/codemind-ai-dashboard.png";
 import arogyaAIImage from "../assets/projects/arogyaai-dashboard.png";
 import cyberShieldImage from "../assets/projects/cybershield-dashboard.png";
 import ecommerceImage from "../assets/projects/ecommerce-dashboard.png";
@@ -14,6 +14,30 @@ import {
 import { FaGithub } from "react-icons/fa";
 
 const projects = [
+{
+  title: "CodeMind AI",
+  subtitle: "AI-Powered Developer Platform",
+
+  description:
+    "An AI-powered developer platform designed to assist developers with coding, problem solving and software development workflows through an intelligent AI interface.",
+
+  icon: BrainCircuit,
+  image: codeMindImage,
+
+  technologies: [
+    "React",
+    "TypeScript",
+    "Python",
+    "FastAPI",
+    "AI / LLM",
+    "REST API",
+  ],
+
+  github: "https://github.com/NitinPatyal03/codemind-ai-frontend",
+  live: "https://codemind-ai-platform.netlify.app/",
+  featured: true,
+},
+
   {
     title: "CyberShield",
     subtitle: "Web & Network Security Dashboard",
