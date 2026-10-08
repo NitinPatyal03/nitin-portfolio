@@ -92,39 +92,40 @@ const Hero = () => {
           </motion.h1>
 
           {/* Role */}
-          <motion.h2
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              duration: 0.6,
-              delay: 0.25,
-            }}
-            className="mt-4 text-xl
-                       font-semibold text-gray-200
-                       sm:mt-5 sm:text-2xl
-                       md:text-3xl"
-          >
-            Full Stack Developer
-          </motion.h2>
+<motion.h2
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{
+    duration: 0.6,
+    delay: 0.25,
+  }}
+  className="mt-4 text-xl
+             font-semibold text-gray-200
+             sm:mt-5 sm:text-2xl
+             md:text-3xl"
+>
+  AI Engineer | Full Stack Developer
+</motion.h2>
 
-          {/* Description */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              duration: 0.6,
-              delay: 0.35,
-            }}
-            className="mt-5 max-w-xl
-                       text-base leading-7
-                       text-gray-400
-                       sm:mt-6 sm:text-lg
-                       sm:leading-8"
-          >
-            I build scalable web applications and secure digital
-            solutions using modern technologies. Passionate about
-            full-stack development, AI and cybersecurity.
-          </motion.p>
+{/* Description */}
+<motion.p
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{
+    duration: 0.6,
+    delay: 0.35,
+  }}
+  className="mt-5 max-w-xl
+             text-base leading-7
+             text-gray-400
+             sm:mt-6 sm:text-lg
+             sm:leading-8"
+>
+  I build AI-powered, scalable and secure web applications
+  using modern full-stack technologies, machine learning
+  and intelligent developer tools. Passionate about AI/ML,
+  backend engineering, cybersecurity and data-driven solutions.
+</motion.p>
 
           {/* Buttons */}
           <motion.div
@@ -151,7 +152,7 @@ const Hero = () => {
             </a>
 
             <a
-              href="/Nitin_Patyal_Resume_.pdf"
+              href="/Nitin_Patyal-Resume.pdf"
               download="Nitin_Patyal_Resume.pdf"
               className="flex w-full items-center
                          justify-center gap-2

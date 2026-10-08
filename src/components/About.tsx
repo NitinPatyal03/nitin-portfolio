@@ -2,31 +2,49 @@ import { motion } from "motion/react";
 import {
   Code2,
   Lightbulb,
-  Rocket,
   ShieldCheck,
+  BrainCircuit,
+  Database,
 } from "lucide-react";
 
 const qualities = [
   {
+    icon: BrainCircuit,
+    title: "AI & ML Focus",
+    description:
+      "Building practical AI/ML solutions using Python, Scikit-learn, LLMs and modern AI tools.",
+  },
+  {
     icon: Code2,
-    title: "Clean Code",
-    description: "Writing maintainable and structured applications.",
+    title: "Full Stack",
+    description:
+      "Developing responsive frontend applications and scalable backend APIs.",
   },
   {
     icon: Lightbulb,
     title: "Problem Solver",
-    description: "Turning technical challenges into practical solutions.",
-  },
-  {
-    icon: Rocket,
-    title: "Quick Learner",
-    description: "Continuously exploring modern technologies and tools.",
+    description:
+      "Turning real-world problems into practical, data-driven software solutions.",
   },
   {
     icon: ShieldCheck,
     title: "Security Mindset",
-    description: "Building applications with security in mind.",
+    description:
+      "Building applications with authentication, RBAC and security-focused workflows.",
   },
+];
+
+const technologies = [
+  "Python",
+  "React.js",
+  "TypeScript",
+  "FastAPI",
+  "ASP.NET Core",
+  "Flask",
+  "Scikit-learn",
+  "LLMs",
+  "PostgreSQL",
+  "MongoDB",
 ];
 
 const About = () => {
@@ -43,7 +61,7 @@ const About = () => {
                    rounded-full bg-blue-600/[0.05]
                    blur-[110px]
                    sm:h-[350px] sm:w-[350px]
-                   lg:h-[400px] lg:w-[400px]
+                   lg:h-[450px] lg:w-[450px]
                    lg:blur-[130px]"
       />
 
@@ -86,8 +104,8 @@ const About = () => {
                        text-sm leading-7 text-gray-400
                        sm:mt-5 sm:text-base"
           >
-            A developer focused on building useful, scalable and
-            secure digital experiences.
+            AI Engineer and Full Stack Developer focused on building
+            intelligent, scalable and secure digital solutions.
           </p>
         </motion.div>
 
@@ -141,7 +159,7 @@ const About = () => {
                              md:h-44 md:w-44"
                 />
 
-                {/* Code icon */}
+                {/* AI / Code icon */}
                 <div
                   className="relative flex h-28 w-28
                              items-center justify-center
@@ -150,11 +168,12 @@ const About = () => {
                              bg-gradient-to-br
                              from-blue-500/10
                              to-purple-500/10
+                             shadow-[0_0_60px_rgba(59,130,246,0.12)]
                              sm:h-36 sm:w-36
                              sm:rounded-3xl
                              md:h-40 md:w-40"
                 >
-                  <Code2
+                  <BrainCircuit
                     strokeWidth={1.3}
                     className="h-12 w-12 text-blue-400
                                sm:h-14 sm:w-14
@@ -166,12 +185,22 @@ const About = () => {
 
             {/* Right content */}
             <div className="min-w-0">
-              <h3
-                className="text-xl font-bold text-white
-                           sm:text-2xl"
-              >
-                Full Stack Developer
-              </h3>
+              <div className="flex flex-wrap items-center gap-3">
+                <h3
+                  className="text-xl font-bold text-white
+                             sm:text-2xl"
+                >
+                  AI Engineer & Full Stack Developer
+                </h3>
+
+                <span
+                  className="rounded-full border border-blue-500/20
+                             bg-blue-500/10 px-3 py-1
+                             text-xs font-medium text-blue-300"
+                >
+                  AI / ML
+                </span>
+              </div>
 
               <p
                 className="mt-4 text-sm leading-7
@@ -179,11 +208,11 @@ const About = () => {
                            sm:mt-5 sm:text-base
                            sm:leading-8"
               >
-                I'm passionate about building modern web applications
-                and solving real-world problems through technology.
-                My development experience includes frontend interfaces,
-                backend APIs, authentication systems and relational
-                databases.
+                I'm a Computer Science Engineering graduate passionate
+                about building AI-powered, scalable and secure software
+                solutions. My experience spans full-stack development,
+                machine learning, REST APIs, data processing and cloud
+                deployment.
               </p>
 
               <p
@@ -191,35 +220,43 @@ const About = () => {
                            text-gray-400
                            sm:text-base sm:leading-8"
               >
-                I primarily work with technologies such as React,
-                TypeScript, ASP.NET Core and SQL Server. I'm also
-                exploring artificial intelligence, machine learning
-                and cybersecurity through practical projects.
+                I work across the stack using Python, React.js,
+                TypeScript, FastAPI, Flask and ASP.NET Core, while
+                exploring LLM integration, machine learning and
+                data-driven applications through practical projects.
               </p>
 
               {/* Technologies */}
-              <div className="mt-6 flex flex-wrap gap-2 sm:mt-8 sm:gap-3">
-                {[
-                  "React",
-                  "TypeScript",
-                  "ASP.NET Core",
-                  "C#",
-                  "SQL Server",
-                  "REST APIs",
-                ].map((skill) => (
-                  <span
-                    key={skill}
-                    className="rounded-full border
-                               border-blue-500/20
-                               bg-blue-500/[0.07]
-                               px-3 py-1.5
-                               text-xs text-blue-300
-                               sm:px-4 sm:py-2
-                               sm:text-sm"
-                  >
-                    {skill}
+              <div className="mt-6 sm:mt-8">
+                <div className="mb-3 flex items-center gap-2">
+                  <Database
+                    size={17}
+                    className="text-blue-400"
+                  />
+
+                  <span className="text-sm font-semibold text-gray-300">
+                    Core Technologies
                   </span>
-                ))}
+                </div>
+
+                <div className="flex flex-wrap gap-2 sm:gap-3">
+                  {technologies.map((technology) => (
+                    <span
+                      key={technology}
+                      className="rounded-full border
+                                 border-blue-500/20
+                                 bg-blue-500/[0.07]
+                                 px-3 py-1.5
+                                 text-xs text-blue-300
+                                 transition hover:border-blue-500/40
+                                 hover:bg-blue-500/10
+                                 sm:px-4 sm:py-2
+                                 sm:text-sm"
+                    >
+                      {technology}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -263,7 +300,10 @@ const About = () => {
                   <Icon size={21} />
                 </div>
 
-                <h4 className="text-sm font-bold text-white sm:text-base">
+                <h4
+                  className="text-sm font-bold text-white
+                             sm:text-base"
+                >
                   {quality.title}
                 </h4>
 

@@ -60,31 +60,34 @@ const Navbar = () => {
             </p>
 
             <p
-              className="hidden text-xs text-gray-500
-                         sm:block"
-            >
-              Full Stack Developer
-            </p>
+  className="hidden text-xs text-gray-500
+             sm:block"
+>
+  AI Engineer • Full Stack
+</p>
           </div>
         </a>
 
         {/* Desktop Navigation */}
         <div
-          className="hidden items-center gap-5
-                     md:flex lg:gap-8"
-        >
+  className="hidden items-center gap-5
+             md:flex lg:gap-7 xl:gap-8"
+>
           {navLinks.map((link) => (
             <a
-              key={link.name}
-              href={link.href}
-              className="text-sm font-medium
-                         text-gray-400 transition
-                         hover:text-blue-400
-                         focus-visible:outline-none
-                         focus-visible:text-blue-400"
-            >
-              {link.name}
-            </a>
+  key={link.name}
+  href={link.href}
+  className={`text-sm font-medium transition
+    focus-visible:outline-none
+    focus-visible:text-blue-400
+    ${
+      link.name === "Contact"
+        ? "rounded-lg border border-blue-500/20 bg-blue-500/10 px-3 py-2 text-blue-400 hover:border-blue-500/40 hover:bg-blue-500/15"
+        : "text-gray-400 hover:text-blue-400"
+    }`}
+>
+  {link.name}
+</a>
           ))}
         </div>
 

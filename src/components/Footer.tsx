@@ -55,7 +55,7 @@ const Footer = () => {
                          text-gray-600
                          sm:text-xs"
             >
-              Full Stack Developer
+              AI Engineer • Full Stack
             </p>
           </div>
         </div>
@@ -68,7 +68,7 @@ const Footer = () => {
                      sm:text-sm
                      md:max-w-none"
         >
-          © {year} Nitin Patyal. Built with React & TypeScript.
+          © {year} Nitin Patyal. 
         </p>
 
         {/* Socials + Back to top */}

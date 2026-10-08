@@ -8,25 +8,56 @@ import {
   Code2,
   ShieldCheck,
   BarChart3,
+  ExternalLink,
 } from "lucide-react";
 
 const certifications = [
   {
-    title: "Programming Using Java",
+    title: "Developing Services using ASP.NET Core Web API",
     issuer: "Infosys Springboard",
     year: "2026",
+    date: "October 8, 2026",
+    file: "/certificates/developing-services-aspnet-core-web-api-infosys.pdf",
     icon: Code2,
   },
   {
-    title: "Ethical Hacking",
+    title: "Ethics & Generative AI (GenAI)",
+    issuer: "Infosys Springboard",
+    year: "2026",
+    date: "August 18, 2026",
+    file: "/certificates/ethics-generative-ai-infosys.pdf",
+    icon: Award,
+  },
+  {
+    title: "Programming Using Java",
+    issuer: "Infosys Springboard",
+    year: "2026",
+    date: "May 3, 2026",
+    file: "/certificates/Infosys.pdf",
+    icon: Code2,
+  },
+  // {
+  //   title: "AR/VR Training",
+  //   issuer: "Internshala",
+  //   year: "2025",
+  //   date: "July 17, 2025",
+  //   file: "/certificates/ar-vr-training-internshala.pdf",
+  //   icon: Code2,
+  // },
+  {
+    title: "Introduction to Cybersecurity",
     issuer: "Cisco Networking Academy",
     year: "2024",
+    date: "June 27, 2024",
+    file: "/certificates/introduction-to-cybersecurity-cisco.pdf",
     icon: ShieldCheck,
   },
   {
     title: "Ethical Hacking",
     issuer: "Internshala",
     year: "2024",
+    date: "June 25, 2024",
+    file: "/certificates/ethical-hacking-internshala.pdf",
     icon: ShieldCheck,
   },
   {
@@ -363,18 +394,40 @@ const Journey = () => {
                         </p>
 
                         {/* Mobile Year */}
-                        <span
-                          className="mt-2 inline-flex
-                                     rounded-full border
-                                     border-white/10
-                                     bg-white/[0.03]
-                                     px-2.5 py-1
-                                     text-[10px]
-                                     text-gray-400
-                                     sm:hidden"
-                        >
-                          {certification.year}
-                        </span>
+                        <div className="flex shrink-0 items-center gap-2">
+  <span
+    className="hidden rounded-full border
+               border-white/10 bg-white/[0.03]
+               px-3 py-1 text-xs text-gray-400
+               sm:inline-flex"
+  >
+    {certification.year}
+  </span>
+
+  {certification.file && (
+    <a
+      href={certification.file}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`View ${certification.title} certificate`}
+      className="inline-flex items-center gap-1.5
+                 rounded-lg border border-blue-500/20
+                 bg-blue-500/10 px-2.5 py-2
+                 text-xs font-medium text-blue-400
+                 transition hover:border-blue-500/40
+                 hover:bg-blue-500/20
+                 hover:text-blue-300"
+    >
+      <ExternalLink size={13} />
+      <span className="hidden sm:inline">
+        View Certificate
+      </span>
+      <span className="sm:hidden">
+        View
+      </span>
+    </a>
+  )}
+</div>
                       </div>
 
                       {/* Tablet/Desktop Year */}

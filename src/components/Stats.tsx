@@ -1,7 +1,7 @@
 import {
+  BrainCircuit,
   Code2,
-  Database,
-  Layers3,
+  Server,
   ShieldCheck,
 } from "lucide-react";
 
@@ -9,24 +9,24 @@ import { motion } from "motion/react";
 
 const stats = [
   {
+    icon: BrainCircuit,
+    title: "AI / ML",
+    subtitle: "Engineering",
+  },
+  {
     icon: Code2,
     title: "Full Stack",
     subtitle: "Development",
   },
   {
-    icon: Layers3,
-    title: ".NET + React",
-    subtitle: "Core Stack",
-  },
-  {
-    icon: Database,
-    title: "SQL Server",
-    subtitle: "Database",
+    icon: Server,
+    title: "APIs & Backend",
+    subtitle: "Engineering",
   },
   {
     icon: ShieldCheck,
-    title: "AI & Security",
-    subtitle: "Exploring",
+    title: "Security",
+    subtitle: "Focused",
   },
 ];
 

@@ -39,7 +39,7 @@ const categories = [
 
 const skills = {
   Frontend: [
-    { name: "React", icon: FaReact },
+    { name: "React.js", icon: FaReact },
     { name: "Angular", icon: FaAngular },
     { name: "TypeScript", icon: SiTypescript },
     { name: "JavaScript", icon: FaJs },
@@ -49,31 +49,47 @@ const skills = {
   ],
 
   Backend: [
+    { name: "FastAPI", icon: Server },
     { name: "ASP.NET Core", icon: SiDotnet },
+    { name: "Flask", icon: Server },
     { name: "C#", icon: Code2 },
     { name: "REST APIs", icon: Server },
-    { name: "Entity Framework", icon: Database },
-    { name: "JWT Auth", icon: Server },
+    { name: "Entity Framework Core", icon: Database },
+    { name: "JWT Authentication", icon: Server },
+    { name: "RBAC", icon: Server },
   ],
 
   Database: [
-    { name: "SQL Server", icon: Code2 },
-    { name: "Entity Framework", icon: Database },
+    { name: "PostgreSQL", icon: Database },
+    { name: "SQL Server", icon: Database },
+    { name: "MongoDB", icon: Database },
+    { name: "MySQL", icon: Database },
     { name: "SQL", icon: Database },
+    { name: "Entity Framework Core", icon: Database },
   ],
 
   Languages: [
-    { name: "C#", icon: Code2 },
-    { name: "TypeScript", icon: SiTypescript },
-    { name: "JavaScript", icon: FaJs },
     { name: "Python", icon: FaPython },
+    { name: "C#", icon: Code2 },
+    { name: "C++", icon: Code2 },
+    { name: "JavaScript", icon: FaJs },
+    { name: "TypeScript", icon: SiTypescript },
+    { name: "Java", icon: Code2 },
+    { name: "SQL", icon: Database },
   ],
 
   "AI/ML": [
     { name: "Python", icon: FaPython },
+    { name: "Scikit-learn", icon: BrainCircuit },
+    { name: "Pandas", icon: BrainCircuit },
+    { name: "NumPy", icon: BrainCircuit },
     { name: "Machine Learning", icon: BrainCircuit },
     { name: "Computer Vision", icon: BrainCircuit },
+    { name: "LLMs", icon: BrainCircuit },
     { name: "LLM Integration", icon: BrainCircuit },
+    { name: "Ollama", icon: BrainCircuit },
+    { name: "FAISS", icon: BrainCircuit },
+    { name: "Sentence Transformers", icon: BrainCircuit },
   ],
 
   Tools: [
@@ -149,8 +165,8 @@ const Skills = () => {
                        text-sm leading-7 text-gray-400
                        sm:mt-5 sm:text-base"
           >
-            Technologies and tools I use to build modern,
-            scalable and secure applications.
+            Technologies and tools I use to build
+AI-powered, scalable and secure applications.
           </p>
         </motion.div>
 

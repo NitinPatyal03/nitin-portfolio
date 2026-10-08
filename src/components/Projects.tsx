@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import codeMindImage from "../assets/projects/codemind-ai-dashboard.png";
 import arogyaAIImage from "../assets/projects/arogyaai-dashboard.png";
 import cyberShieldImage from "../assets/projects/cybershield-dashboard.png";
+import creditGuardImage from "../assets/projects/creditguard-dashboard.png";
 import ecommerceImage from "../assets/projects/ecommerce-dashboard.png";
 
 import {
@@ -14,29 +15,33 @@ import {
 import { FaGithub } from "react-icons/fa";
 
 const projects = [
-{
-  title: "CodeMind AI",
-  subtitle: "AI-Powered Developer Platform",
+  {
+    title: "CodeMind AI",
+    subtitle: "AI-Powered Developer Platform",
 
-  description:
-    "An AI-powered developer platform designed to assist developers with coding, problem solving and software development workflows through an intelligent AI interface.",
+    description:
+      "An AI-powered developer platform designed to assist developers with coding, problem solving and software development workflows through an intelligent AI interface.",
 
-  icon: BrainCircuit,
-  image: codeMindImage,
+    icon: BrainCircuit,
+    image: codeMindImage,
 
-  technologies: [
-    "React",
-    "TypeScript",
-    "Python",
-    "FastAPI",
-    "AI / LLM",
-    "REST API",
-  ],
+    technologies: [
+      "React",
+      "TypeScript",
+      "Python",
+      "FastAPI",
+      "AI / LLM",
+      "REST API",
+    ],
 
-  github: "https://github.com/NitinPatyal03/codemind-ai-frontend",
-  live: "https://codemind-ai-platform.netlify.app/",
-  featured: true,
-},
+    github:
+      "https://github.com/NitinPatyal03/codemind-ai-frontend",
+
+    live:
+      "https://codemind-ai-platform.netlify.app/",
+
+    featured: true,
+  },
 
   {
     title: "CyberShield",
@@ -57,10 +62,42 @@ const projects = [
       "Cybersecurity",
     ],
 
-    github: "https://github.com/NitinPatyal03/CyberShield",
-    live: "https://cyber-shield-lac-rho.vercel.app/",
-    featured: true,
+    github:
+      "https://github.com/NitinPatyal03/CyberShield",
+
+    live:
+      "https://cyber-shield-lac-rho.vercel.app/",
+
+    featured: false,
   },
+
+  {
+  title: "CreditGuard",
+  subtitle: "AI-Powered Credit Risk Prediction Platform",
+
+  description:
+    "An AI-powered credit risk prediction platform that uses data preprocessing, feature engineering, machine learning model tuning and optimized classification thresholds to improve credit risk assessment.",
+
+  icon: BrainCircuit,
+  image: creditGuardImage,
+
+  technologies: [
+    "Python",
+    "Pandas",
+    "Scikit-learn",
+    "FastAPI",
+    "React",
+    "Machine Learning",
+  ],
+
+  github:
+    "https://github.com/NitinPatyal03/CreditGuard",
+
+  live:
+    "https://creditguard-analytics.netlify.app/",
+
+  featured: false,
+},
 
   {
     title: "ArogyaAI",
@@ -81,8 +118,12 @@ const projects = [
       "Gemini AI",
     ],
 
-    github: "https://github.com/NitinPatyal03/ArogyaAI-",
-    live: "https://arogyaaiv2.netlify.app/",
+    github:
+      "https://github.com/NitinPatyal03/ArogyaAI-",
+
+    live:
+      "https://arogyaaiv2.netlify.app/",
+
     featured: false,
   },
 
@@ -109,6 +150,7 @@ const projects = [
       "https://github.com/NitinPatyal03/Ecomm_Project_0854",
 
     live: "",
+
     featured: false,
   },
 ];
