@@ -12,7 +12,6 @@ import {
 
 import {
   FaReact,
-  FaAngular,
   FaHtml5,
   FaCss3Alt,
   FaJs,
@@ -40,7 +39,6 @@ const categories = [
 const skills = {
   Frontend: [
     { name: "React.js", icon: FaReact },
-    { name: "Angular", icon: FaAngular },
     { name: "TypeScript", icon: SiTypescript },
     { name: "JavaScript", icon: FaJs },
     { name: "HTML5", icon: FaHtml5 },
